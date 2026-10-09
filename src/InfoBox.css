@@ -1,0 +1,82 @@
+.InfoBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 12px;
+}
+
+.cardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.weather-card.MuiCard-root {
+    width: 100%;
+    max-width: 440px;
+    overflow: hidden;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.weather-card.MuiCard-root:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 24px 50px rgba(15, 23, 42, 0.16);
+}
+
+.weather-card .MuiCardMedia-root {
+    height: 190px !important;
+    background-position: center;
+    background-size: cover;
+}
+
+.weather-card .MuiCardContent-root {
+    padding: 24px;
+}
+
+.weather-city.MuiTypography-root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: #0f172a;
+    font-size: 1.65rem;
+    font-weight: 800;
+}
+
+.weather-city .MuiSvgIcon-root {
+    font-size: 1.8rem;
+    color: #2563eb;
+}
+
+.weather-details.MuiTypography-root {
+    color: #475569;
+    line-height: 1.6;
+}
+
+.weather-details p {
+    margin: 10px 0;
+    padding: 11px 13px;
+    border-radius: 11px;
+    background: #f1f5f9;
+    font-size: 0.95rem;
+}
+
+.weather-details p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+    .weather-card .MuiCardContent-root {
+        padding: 18px;
+    }
+
+    .weather-card .MuiCardMedia-root {
+        height: 160px !important;
+    }
+}
